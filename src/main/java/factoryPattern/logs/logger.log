@@ -1,0 +1,6 @@
+2023-06-26 18:13:14,342 INFO f.p.Message [main] Add default headers to message
+2023-06-26 18:13:14,344 INFO f.p.Message [main] Message encrypt
+2023-06-26 18:13:14,345 INFO f.Client [main] JSONMessage
+2023-06-26 18:13:14,346 INFO f.p.Message [main] Add default headers to message
+2023-06-26 18:13:14,346 INFO f.p.Message [main] Message encrypt
+2023-06-26 18:13:14,346 INFO f.Client [main] TextMessage

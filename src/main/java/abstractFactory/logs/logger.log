@@ -1,0 +1,5 @@
+2023-06-26 18:12:20,264 INFO a.p.Ec2Instance [main] Created Ec2Instance
+2023-06-26 18:12:20,267 INFO a.p.S3Storage [main] Allocated 20480 on S3
+2023-06-26 18:12:20,267 INFO a.p.Ec2Instance [main] Attached S3 Storage to Ec2Instance
+2023-06-26 18:12:20,267 INFO a.p.Ec2Instance [main] Ec2Instance started
+2023-06-26 18:12:20,267 INFO a.p.Ec2Instance [main] Ec2Instance stopped

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <RollingFile name="file-abstractFactory"
+                     fileName="src/main/java/abstractFactory/logs/logger.log"
+                     filePattern="src/main/java/abstractFactory/logs/logger-%d{HH-mm-ss-SSS}.log">
+            <PatternLayout>
+                <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+            </PatternLayout>
+            <SizeBasedTriggeringPolicy size="15000" />
+        </RollingFile>
+
+        <RollingFile name="file-builderPattern"
+                     fileName="src/main/java/builderPattern/logs/logger.log"
+                     filePattern="src/main/java/builderPattern/logs/logger-%d{HH-mm-ss-SSS}.log">
+            <PatternLayout>
+                <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+            </PatternLayout>
+            <SizeBasedTriggeringPolicy size="15000" />
+        </RollingFile>
+
+        <RollingFile name="file-factoryPattern"
+                     fileName="src/main/java/factoryPattern/logs/logger.log"
+                     filePattern="src/main/java/factoryPattern/logs/logger-%d{HH-mm-ss-SSS}.log">
+            <PatternLayout>
+                <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+            </PatternLayout>
+            <SizeBasedTriggeringPolicy size="15000" />
+        </RollingFile>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="abstractFactory" level="info" additivity="false">
+            <AppenderRef ref="file-abstractFactory"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="builderPattern" level="info" additivity="false">
+            <AppenderRef ref="file-builderPattern"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="factoryPattern" level="info" additivity="false">
+            <AppenderRef ref="file-factoryPattern"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
